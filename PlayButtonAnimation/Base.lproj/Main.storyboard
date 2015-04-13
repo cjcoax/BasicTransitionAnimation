@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--From View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="FromViewController" customModule="PlayButtonAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlk-Fa-h7J">
+                                <rect key="frame" x="248" y="285" width="104" height="30"/>
+                                <state key="normal" title="Start Transition">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BgM-sB-N2C" kind="presentation" identifier="dribbleSegue" modalPresentationStyle="currentContext" id="4Vv-Gn-uYG"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZY3-d4-cKA" userLabel="greenCircle">
+                                <rect key="frame" x="240" y="380" width="120" height="120"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZY3-d4-cKA" secondAttribute="height" multiplier="1:1" id="rhs-5F-Y19"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZY3-d4-cKA" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.2" id="7zg-EK-e2S" userLabel="Equal Widths - green - View"/>
+                            <constraint firstAttribute="centerX" secondItem="ZY3-d4-cKA" secondAttribute="centerX" id="Wdl-SG-TLb" userLabel="Center X Alignment - green - View"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ZY3-d4-cKA" secondAttribute="bottom" constant="100" id="aPP-pc-NvL" userLabel="Vertical Space - (100) - Bottom Layout Guide - green"/>
+                            <constraint firstAttribute="centerX" secondItem="Rlk-Fa-h7J" secondAttribute="centerX" id="fSk-Gf-WuJ" userLabel="Center X Alignment - view- Start Transition"/>
+                            <constraint firstAttribute="centerY" secondItem="Rlk-Fa-h7J" secondAttribute="centerY" id="ipM-YS-ava"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logoView" destination="ZY3-d4-cKA" id="gIh-hB-KZe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--To View Controller-->
+        <scene sceneID="cgf-Zg-jrl">
+            <objects>
+                <viewController id="BgM-sB-N2C" customClass="ToViewController" customModule="PlayButtonAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="anz-8n-oCi"/>
+                        <viewControllerLayoutGuide type="bottom" id="SNm-it-oGg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jp4-As-LYC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PK1-PK-rx0" userLabel="calendarView">
+                                <rect key="frame" x="275" y="550" width="50" height="50"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Calendar" translatesAutoresizingMaskIntoConstraints="NO" id="cfu-ts-RJu" userLabel="Calendar">
+                                        <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="cfu-ts-RJu" firstAttribute="top" secondItem="PK1-PK-rx0" secondAttribute="top" constant="10" id="97h-AD-FTX"/>
+                                    <constraint firstAttribute="trailing" secondItem="cfu-ts-RJu" secondAttribute="trailing" constant="10" id="99Z-2U-Ajc"/>
+                                    <constraint firstAttribute="height" constant="50" id="DPS-PA-sPI"/>
+                                    <constraint firstAttribute="width" constant="50" id="H1w-Ye-hM2"/>
+                                    <constraint firstItem="cfu-ts-RJu" firstAttribute="leading" secondItem="PK1-PK-rx0" secondAttribute="leading" constant="10" id="JdR-gz-92L"/>
+                                    <constraint firstAttribute="bottom" secondItem="cfu-ts-RJu" secondAttribute="bottom" constant="10" id="mAo-TO-IuH"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qPG-lF-iJq" userLabel="closeView">
+                                <rect key="frame" x="280" y="600" width="40" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjT-bC-gjK">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" title="Button" image="Close">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="2Oy-UP-7Ka" kind="unwind" identifier="exitSegue" unwindAction="unwindToViewController:" id="Clf-ep-uxC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="KjT-bC-gjK" firstAttribute="top" secondItem="qPG-lF-iJq" secondAttribute="top" id="IJZ-jU-Lek"/>
+                                    <constraint firstAttribute="bottom" secondItem="KjT-bC-gjK" secondAttribute="bottom" id="Ihr-ob-3Pg"/>
+                                    <constraint firstItem="KjT-bC-gjK" firstAttribute="leading" secondItem="qPG-lF-iJq" secondAttribute="leading" id="Jfd-SB-IgQ"/>
+                                    <constraint firstAttribute="width" constant="40" id="L5U-PJ-Let"/>
+                                    <constraint firstAttribute="height" constant="40" id="OTj-Dn-r25"/>
+                                    <constraint firstAttribute="trailing" secondItem="KjT-bC-gjK" secondAttribute="trailing" id="dZN-wY-PgO"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tp0-TF-6Xy" userLabel="pinView">
+                                <rect key="frame" x="268" y="535" width="65" height="65"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pin" translatesAutoresizingMaskIntoConstraints="NO" id="K6G-H0-AIL">
+                                        <rect key="frame" x="10" y="10" width="45" height="45"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="K6G-H0-AIL" firstAttribute="leading" secondItem="tp0-TF-6Xy" secondAttribute="leading" constant="10" id="0xi-5e-ocj"/>
+                                    <constraint firstAttribute="width" constant="65" id="LUV-9b-DlG"/>
+                                    <constraint firstAttribute="bottom" secondItem="K6G-H0-AIL" secondAttribute="bottom" constant="10" id="MH0-dW-zXS"/>
+                                    <constraint firstAttribute="trailing" secondItem="K6G-H0-AIL" secondAttribute="trailing" constant="10" id="VdC-TZ-P53"/>
+                                    <constraint firstItem="K6G-H0-AIL" firstAttribute="top" secondItem="tp0-TF-6Xy" secondAttribute="top" constant="10" id="kZH-mL-Q1U"/>
+                                    <constraint firstAttribute="height" constant="65" id="z9c-em-cHN"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fae-I5-jwP" userLabel="numberView">
+                                <rect key="frame" x="275" y="550" width="50" height="50"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="One" translatesAutoresizingMaskIntoConstraints="NO" id="hwg-8G-aEE" userLabel="Number">
+                                        <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="hwg-8G-aEE" secondAttribute="bottom" constant="10" id="0iR-BN-X8h"/>
+                                    <constraint firstAttribute="height" constant="50" id="BdN-cY-cFd"/>
+                                    <constraint firstItem="hwg-8G-aEE" firstAttribute="leading" secondItem="fae-I5-jwP" secondAttribute="leading" constant="10" id="WCm-IE-18r"/>
+                                    <constraint firstItem="hwg-8G-aEE" firstAttribute="top" secondItem="fae-I5-jwP" secondAttribute="top" constant="10" id="aDl-BN-nhg"/>
+                                    <constraint firstAttribute="trailing" secondItem="hwg-8G-aEE" secondAttribute="trailing" constant="10" id="crZ-L6-nut"/>
+                                    <constraint firstAttribute="width" constant="50" id="fqF-lt-eS1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="tp0-TF-6Xy" secondAttribute="centerX" id="49C-Un-j0C"/>
+                            <constraint firstAttribute="centerX" secondItem="fae-I5-jwP" secondAttribute="centerX" id="4r8-qp-jyX"/>
+                            <constraint firstItem="SNm-it-oGg" firstAttribute="top" secondItem="fae-I5-jwP" secondAttribute="bottom" id="8K8-ae-WYq"/>
+                            <constraint firstAttribute="centerX" secondItem="PK1-PK-rx0" secondAttribute="centerX" id="AiN-c3-YDG"/>
+                            <constraint firstItem="SNm-it-oGg" firstAttribute="top" secondItem="qPG-lF-iJq" secondAttribute="bottom" constant="-40" id="CH8-12-w6h"/>
+                            <constraint firstItem="SNm-it-oGg" firstAttribute="top" secondItem="PK1-PK-rx0" secondAttribute="bottom" id="SHW-t8-cga"/>
+                            <constraint firstAttribute="bottom" secondItem="tp0-TF-6Xy" secondAttribute="bottom" id="eHj-cA-acA"/>
+                            <constraint firstAttribute="centerX" secondItem="qPG-lF-iJq" secondAttribute="centerX" id="rYQ-OO-qBD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calendarBottomConstraint" destination="SHW-t8-cga" id="Kp6-4T-SgF"/>
+                        <outlet property="calendarHorizontalConstraint" destination="AiN-c3-YDG" id="HfJ-m7-Veg"/>
+                        <outlet property="calendarView" destination="PK1-PK-rx0" id="n6o-ep-mRp"/>
+                        <outlet property="closeView" destination="qPG-lF-iJq" id="83K-I2-60p"/>
+                        <outlet property="closeViewVerticalConstraint" destination="CH8-12-w6h" id="d8s-jx-OiO"/>
+                        <outlet property="numberView" destination="fae-I5-jwP" id="gmQ-3P-JCN"/>
+                        <outlet property="numberViewBottomConstraint" destination="8K8-ae-WYq" id="M81-9D-6P6"/>
+                        <outlet property="numberViewHorizontalConstraint" destination="4r8-qp-jyX" id="u2h-JW-7yT"/>
+                        <outlet property="pinBottomConstraint" destination="eHj-cA-acA" id="fQi-p5-5qi"/>
+                        <outlet property="pinView" destination="tp0-TF-6Xy" id="IK2-xX-0ix"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0sT-IS-B5t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="2Oy-UP-7Ka" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="296"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Calendar" width="100" height="100"/>
+        <image name="Close" width="64" height="64"/>
+        <image name="One" width="100" height="100"/>
+        <image name="Pin" width="100" height="135"/>
+    </resources>
+</document>

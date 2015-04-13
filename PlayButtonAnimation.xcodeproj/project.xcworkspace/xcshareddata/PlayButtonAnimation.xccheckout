@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2779B960-14A3-46AB-82CF-A4CF153E46B0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PlayButtonAnimation</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FDB5D84FB2377F9020BB9527F3E9890446B2C02F</key>
+		<string>https://gitlab.com/Rezvani/map-playground.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Animation/Misc/PlayButtonAnimation/PlayButtonAnimation.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FDB5D84FB2377F9020BB9527F3E9890446B2C02F</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://gitlab.com/Rezvani/map-playground.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FDB5D84FB2377F9020BB9527F3E9890446B2C02F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FDB5D84FB2377F9020BB9527F3E9890446B2C02F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS%20Practices</string>
+		</dict>
+	</array>
+</dict>
+</plist>
