@@ -17,6 +17,7 @@
 		5F1121DF1AD77B6700F478A7 /* TransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1121DE1AD77B6700F478A7 /* TransitionController.swift */; };
 		5F1121E11AD79A2500F478A7 /* LogoLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1121E01AD79A2500F478A7 /* LogoLayer.swift */; };
 		5F1121E51AD7A09700F478A7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1121E41AD7A09700F478A7 /* QuartzCore.framework */; };
+		5F3C7FE21ADB4413005B5E57 /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 5F3C7FE11ADB4413005B5E57 /* readme.md */; };
 		5FAC15981AD9897D00E1DEAD /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC15971AD9897D00E1DEAD /* CircleView.swift */; };
 		5FAC159A1AD98A2F00E1DEAD /* CircleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FAC15991AD98A2F00E1DEAD /* CircleView.xib */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,7 @@
 		5F1121DE1AD77B6700F478A7 /* TransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionController.swift; sourceTree = "<group>"; };
 		5F1121E01AD79A2500F478A7 /* LogoLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoLayer.swift; sourceTree = "<group>"; };
 		5F1121E41AD7A09700F478A7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5F3C7FE11ADB4413005B5E57 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		5FAC15971AD9897D00E1DEAD /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		5FAC15991AD98A2F00E1DEAD /* CircleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleView.xib; sourceTree = "<group>"; };
 		5FBEFB191ADA42E800E0215E /* PlayButtonAnimation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlayButtonAnimation-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 		5F1121AE1AD7760B00F478A7 = {
 			isa = PBXGroup;
 			children = (
+				5F3C7FE11ADB4413005B5E57 /* readme.md */,
 				5F1121E41AD7A09700F478A7 /* QuartzCore.framework */,
 				5F1121B91AD7760B00F478A7 /* PlayButtonAnimation */,
 				5F1121CF1AD7760B00F478A7 /* PlayButtonAnimationTests */,
@@ -238,6 +241,7 @@
 				5F1121DF1AD77B6700F478A7 /* TransitionController.swift in Sources */,
 				5F1121E11AD79A2500F478A7 /* LogoLayer.swift in Sources */,
 				5F1121BF1AD7760B00F478A7 /* FromViewController.swift in Sources */,
+				5F3C7FE21ADB4413005B5E57 /* readme.md in Sources */,
 				5F1121DD1AD777D200F478A7 /* ToViewController.swift in Sources */,
 				5F1121BD1AD7760B00F478A7 /* AppDelegate.swift in Sources */,
 			);
