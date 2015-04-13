@@ -1,4 +1,4 @@
-Masking transition animation iOS 8!
+Masking transition animation iOS 8
 ===================
 
 This is a demo for transition animation in iOS 8 for [JOGABO](http://jogabo.com/)
