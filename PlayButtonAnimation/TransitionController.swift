@@ -18,7 +18,7 @@ class TransitionController : NSObject, UIViewControllerAnimatedTransitioning,UIV
 
     
     //MARK: - UIViewControllerAnimatedTransitioning delegate
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return duration
     }
     
@@ -62,7 +62,7 @@ class TransitionController : NSObject, UIViewControllerAnimatedTransitioning,UIV
     
     
     
-    override func animationDidStop(anim: CAAnimation!, finished flag: Bool) {
+    override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
 
         if let context = storedContext {
             let secondVc = context.viewControllerForKey(UITransitionContextToViewControllerKey) as!  ToViewController

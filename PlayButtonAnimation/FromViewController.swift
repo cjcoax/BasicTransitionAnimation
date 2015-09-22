@@ -82,7 +82,7 @@ class FromViewController: UIViewController, UIViewControllerTransitioningDelegat
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier?.lowercaseString == "dribblesegue" {
-            let toVc: UIViewController = segue.destinationViewController as! UIViewController
+            let toVc: UIViewController = segue.destinationViewController 
             toVc.transitioningDelegate = self
         }
     }
